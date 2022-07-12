@@ -11437,13 +11437,40 @@ html {
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s; /* don't forget to set a duration! */
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
   width: 15rem;
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
+
+.masthead .masthead-avatar:hover {
+  transform: scale(1.1);
+
+}
+
+#masthead-divider{
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s; /* don't forget to set a duration! */
+}
+
+#masthead-text{
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s; /* don't forget to set a duration! */
+}
+
+#masthead-tech{
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 5s; /* don't forget to set a duration! */
+}
+
+
+
 
 @media (min-width: 992px) {
   .masthead {
