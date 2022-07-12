@@ -7,13 +7,11 @@ const contactSchema = new Schema(
       type: String,
       required: true,
       maxlength: 30,
-      minlength: 3,
     },
     title: {
       type: String,
       required: true,
       maxlength: 30,
-      minlength: 3,
     },
     email: {
       type: String,
@@ -28,7 +26,6 @@ const contactSchema = new Schema(
       type: String,
       require: true,
       maxlength: 150,
-      minlength: 3,
     },
     contactCreatedAt: {
       typ: Date,

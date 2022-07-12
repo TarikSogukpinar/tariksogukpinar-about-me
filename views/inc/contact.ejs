@@ -14,7 +14,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-8 col-xl-7">
 
-        <form id="contactForm" class="form-register" action="contact/addNewPost" method="post">
+        <form  class="form-register" action="contact/addNewPost" method="post">
           <!-- Name input-->
           <div class="form-floating mb-3">
             <input class="form-control" id="firstName" name="firstName" type="text" placeholder="Enter your name..."  required />
@@ -26,7 +26,7 @@
           
           <!-- Email address input-->
           <div class="form-floating mb-3">
-            <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
+            <input class="form-control" id="email" name="email" placeholder="name@example.com" required />
             <label for="email">Email address</label>
             <div class="invalid-feedback" data-sb-feedback="email:required">
               An email is required.
@@ -67,7 +67,7 @@
             </div>
           </div>
           <!-- Submit Button-->
-          <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit" value="Kayıt">
+          <button class="btn btn-primary btn-xl" id="submitButton" type="submit" value="gonder">
             Send
           </button>
         </form>

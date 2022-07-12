@@ -3,7 +3,7 @@ const cookieParser = require("cookie-parser");
 const connectDatabase = require("./helpers/connectDatabase");
 const dotenv = require("dotenv");
 const indexRoutes = require("./router/indexRoutes");
-
+const contactRoutes = require("./router/contactRoutes");
 const app = express();
 dotenv.config();
 
@@ -22,6 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use("/", indexRoutes);
+app.use("/contact", contactRoutes);
 
 app.use((req, res) => {
   res.render("404", { title: "Sayfa Bulunamadı" });
