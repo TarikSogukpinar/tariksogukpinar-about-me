@@ -7,23 +7,23 @@
     <!-- Icon Divider-->
     <div class="divider-custom">
       <div class="divider-custom-line"></div>
-      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+      <div class="divider-custom-icon"><i class="fa-solid fa-file-signature"></i></div>
       <div class="divider-custom-line"></div>
     </div>
     <!-- Contact Section Form-->
     <div class="row justify-content-center">
       <div class="col-lg-8 col-xl-7">
 
-        <form  class="form-register" action="contact/addNewPost" method="post">
+        <form class="form-register" action="contact/addNewPost" method="post">
           <!-- Name input-->
           <div class="form-floating mb-3">
-            <input class="form-control" id="firstName" name="firstName" type="text" placeholder="Enter your name..."  required />
+            <input class="form-control" id="firstName" name="firstName" type="text" placeholder="Enter your name..." required />
             <label for="name"><i class="fa-solid fa-user"></i> <strong> Full name</strong> </label>
             <div class="invalid-feedback" data-sb-feedback="name:required">
               A name is required.
             </div>
           </div>
-          
+
           <!-- Email address input-->
           <div class="form-floating mb-3">
             <input class="form-control" id="email" name="email" placeholder="name@example.com" required />
@@ -43,22 +43,22 @@
               Title is required.
             </div>
           </div>
-            <!-- Github input-->
-            <div class="form-floating mb-3">
-              <input class="form-control" id="title" name="title" placeholder="Example Topic" data-sb-validations="required" />
-              <label for="title"><i class="fa-brands fa-github"></i><strong> Github (optional)</strong> </label>
-              <div class="invalid-feedback" data-sb-feedback="phone:required">
-                Title is required.
-              </div>
+          <!-- Github input-->
+          <div class="form-floating mb-3">
+            <input class="form-control" id="github" name="github" placeholder="Example Topic" data-sb-validations="required" />
+            <label for="title"><i class="fa-brands fa-github"></i><strong> Github (optional)</strong> </label>
+            <div class="invalid-feedback" data-sb-feedback="phone:required">
+              Github is required.
             </div>
-              <!-- Linkedin input-->
-              <div class="form-floating mb-3">
-                <input class="form-control" id="title" name="title" placeholder="Example Topic" data-sb-validations="required" />
-                <label for="title"><i class="fa-brands fa-linkedin"></i><strong> Linkedin (optional)</strong> </label>
-                <div class="invalid-feedback" data-sb-feedback="phone:required">
-                  Title is required.
-                </div>
-              </div>
+          </div>
+          <!-- Linkedin input-->
+          <div class="form-floating mb-3">
+            <input class="form-control" id="linkedin" name="linkedin" placeholder="Example Topic" data-sb-validations="required" />
+            <label for="title"><i class="fa-brands fa-linkedin"></i><strong> Linkedin (optional)</strong> </label>
+            <div class="invalid-feedback" data-sb-feedback="phone:required">
+              Linkedin is required.
+            </div>
+          </div>
           <!-- Message input-->
           <div class="form-floating mb-3">
             <textarea class="form-control" id="contactDescription" name="contactDescription" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
@@ -73,7 +73,7 @@
               <div class="fw-bolder">Form submission successful!</div>
               To activate this form, sign up at
               <br />
-              <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+              <a href="https://startbootstrap.com/solution/contact-forms"></a>
             </div>
           </div>
 
@@ -84,7 +84,7 @@
           </div>
           <!-- Submit Button-->
           <button class="btn btn-primary btn-xl" id="submitButton" type="submit" value="gonder">
-            <i class="fa-solid fa-paper-plane"></i> <strong> Send</strong> 
+            <i class="fa-solid fa-paper-plane"></i> <strong> Send</strong>
           </button>
         </form>
       </div>

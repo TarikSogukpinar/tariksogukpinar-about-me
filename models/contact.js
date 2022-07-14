@@ -22,6 +22,16 @@ const contactSchema = new Schema(
         "Please provide valid email",
       ],
     },
+    github: {
+      type: String,
+      required: false,
+      maxlength: 30,
+    },
+    linkedin: {
+      type: String,
+      required: false,
+      maxlength: 30,
+    },
     contactDescription: {
       type: String,
       require: true,
