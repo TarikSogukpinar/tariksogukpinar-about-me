@@ -1,13 +1,11 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
-const connectDatabase = require("./helpers/connectDatabase");
+
 const dotenv = require("dotenv");
 const indexRoutes = require("./router/indexRoutes");
 const contactRoutes = require("./router/contactRoutes");
 const app = express();
 dotenv.config();
-
-connectDatabase();
 
 app.set("view engine", "ejs");
 
