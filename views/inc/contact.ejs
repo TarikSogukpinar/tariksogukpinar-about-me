@@ -16,8 +16,12 @@
 
         <form class="form-register" action="contact/addNewPost" method="post">
           <!-- Name input-->
+       
+        
+            
+ 
           <div class="form-floating mb-3">
-            <input class="form-control" id="firstName" name="firstName" type="text" placeholder="Enter your name..." required />
+            <input class="form-control" id="contact_firstname" name="contact_firstname" type="text" placeholder="Enter your name..." required />
             <label for="name"><i class="fa-solid fa-user"></i> <strong> Full name</strong> </label>
             <div class="invalid-feedback" data-sb-feedback="name:required">
               A name is required.
@@ -26,7 +30,7 @@
 
           <!-- Email address input-->
           <div class="form-floating mb-3">
-            <input class="form-control" id="email" name="email" placeholder="name@example.com" required />
+            <input class="form-control" id="contact_email" name="contact_email" placeholder="name@example.com" required />
             <label for="email"><i class="fa-solid fa-envelope"></i> <strong> Email address</strong> </label>
             <div class="invalid-feedback" data-sb-feedback="email:required">
               An email is required.
@@ -37,7 +41,7 @@
           </div>
           <!-- Title input-->
           <div class="form-floating mb-3">
-            <input class="form-control" id="title" name="title" placeholder="Example Topic" data-sb-validations="required" />
+            <input class="form-control" id="contact_title" name="contact_title" placeholder="Example Topic" data-sb-validations="required" />
             <label for="title"><i class="fa-solid fa-align-left"></i><strong> Title</strong> </label>
             <div class="invalid-feedback" data-sb-feedback="phone:required">
               Title is required.
@@ -45,7 +49,7 @@
           </div>
           <!-- Github input-->
           <div class="form-floating mb-3">
-            <input class="form-control" id="github" name="github" placeholder="Example Topic" data-sb-validations="required" />
+            <input class="form-control" id="contact_github" name="contact_github" placeholder="Example Topic" data-sb-validations="required" />
             <label for="title"><i class="fa-brands fa-github"></i><strong> Github (optional)</strong> </label>
             <div class="invalid-feedback" data-sb-feedback="phone:required">
               Github is required.
@@ -53,7 +57,7 @@
           </div>
           <!-- Linkedin input-->
           <div class="form-floating mb-3">
-            <input class="form-control" id="linkedin" name="linkedin" placeholder="Example Topic" data-sb-validations="required" />
+            <input class="form-control" id="contact_linkedin" name="contact_linkedin" placeholder="Example Topic" data-sb-validations="required" />
             <label for="title"><i class="fa-brands fa-linkedin"></i><strong> Linkedin (optional)</strong> </label>
             <div class="invalid-feedback" data-sb-feedback="phone:required">
               Linkedin is required.
@@ -61,7 +65,7 @@
           </div>
           <!-- Message input-->
           <div class="form-floating mb-3">
-            <textarea class="form-control" id="contactDescription" name="contactDescription" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+            <textarea class="form-control" id="contact_contactdescription" name="contact_contactdescription" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
             <label for="message"><i class="fa-solid fa-message"></i> <strong>Message</strong> </label>
             <div class="invalid-feedback" data-sb-feedback="message:required">
               A message is required.

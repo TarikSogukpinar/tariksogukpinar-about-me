@@ -1,6 +1,6 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
-
+const postgreClient = require("./helpers/postgreClient");
 const dotenv = require("dotenv");
 const indexRoutes = require("./router/indexRoutes");
 const contactRoutes = require("./router/contactRoutes");
@@ -9,8 +9,18 @@ dotenv.config();
 
 app.set("view engine", "ejs");
 
-app.listen(process.env.PORT, () => {
-  console.log("Port Listening");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${process.env.PORT}`);
+  postgreClient.connect((err) => {
+    if (err) {
+      console.log(err);
+      console.log("errorhere");
+    } else {
+      console.log("Postgre connection successful");
+    }
+  });
 });
 
 app.use(express.static(__dirname + "/public"));
