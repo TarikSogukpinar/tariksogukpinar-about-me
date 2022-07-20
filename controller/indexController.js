@@ -1,5 +1,5 @@
 const IndexPage = (req, res) => {
-  res.render("index", { title: "Tarık Soğukpınar" });
+  res.render("index", { PageTitle: "Tarık Soğukpınar" });
 };
 
 module.exports = {

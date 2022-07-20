@@ -1,6 +1,5 @@
 const pg = require("pg");
 const dotenv = require("dotenv");
-
 dotenv.config();
 
 const postgreClient = new pg.Pool({

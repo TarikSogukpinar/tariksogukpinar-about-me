@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const contactController = require('../controller/contactController');
 const postgreClient = require("../helpers/postgreClient");
 
 router.post("/addNewPost", async (req, res) => {
@@ -16,13 +17,13 @@ router.post("/addNewPost", async (req, res) => {
       new Date(),
     ];
     const { rows } = await postgreClient.query(text, values);
-    
-    return res.status(201).json(res.redirect("/"));
-    
+    return res.status(201).json(res.redirect("/success"));
   } catch (error) {
-    console.log("Error: ", error.message);
+    console.log(`Error: ${error.message}`);
     return res.status(400).json({ message: error.message });
   }
 });
+
+router.get("/", contactController.SuccessPage);
 
 module.exports = router;
