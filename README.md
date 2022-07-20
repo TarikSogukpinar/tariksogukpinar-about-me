@@ -6,7 +6,7 @@
   
 # About ME
 
-Bu proje kişisel portfolyo için geliştirildi. Web site üzerinden projelerimi & blog yazılarımı görüntüleyebilirsiniz. Diğer projelerim ve gelecekte ki  blog yazılarım için beni takip edip bu repoyu yıldızlayabilirsiniz .. :)
+Bu proje kişisel portfolyo için geliştirildi. Web site üzerinden projelerimi & blog yazılarımı görüntüleyebilirsiniz. Diğer projelerim ve gelecekte ki  blog yazılarım için beni takip edip bu repoyu yıldızlayabilirsiniz .. :) Her hangi bir tavsiye için lütfen benimle iletişime geçin bu benim için çok önemli.
 
 
 
