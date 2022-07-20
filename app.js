@@ -16,7 +16,7 @@ app.listen(PORT, () => {
   postgreClient.connect((err) => {
     if (err) {
       console.log(err);
-      console.log("errorhere");
+      console.log("Error connecting to postgres");
     } else {
       console.log("Postgre connection successful");
     }
