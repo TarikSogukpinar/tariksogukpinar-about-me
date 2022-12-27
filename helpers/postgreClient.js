@@ -1,9 +1,9 @@
-const pg = require("pg");
-const dotenv = require("dotenv");
-dotenv.config();
+// const pg = require("pg");
+// const dotenv = require("dotenv");
+// dotenv.config();
 
-const postgreClient = new pg.Pool({
-  connectionString: process.env.DB_CONNECTION_STRING,
-});
+// const postgreClient = new pg.Pool({
+//   connectionString: process.env.DB_CONNECTION_STRING,
+// });
 
-module.exports = postgreClient;
+// module.exports = postgreClient;
