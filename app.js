@@ -15,13 +15,13 @@ app.set("view engine", "ejs");
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
-  postgreClient.connect((error) => {
-    if (error) {
-      console.log(`Error Connecting To Postgres ${error}`);
-    } else {
-      console.log("Postgre Connection Successful!");
-    }
-  });
+  // postgreClient.connect((error) => {
+  //   if (error) {
+  //     console.log(`Error Connecting To Postgres ${error}`);
+  //   } else {
+  //     console.log("Postgre Connection Successful!");
+  //   }
+  // });
 });
 
 app.use(express.static(__dirname + "/public"));
