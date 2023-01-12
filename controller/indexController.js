@@ -1,5 +1,9 @@
 const IndexPage = (req, res) => {
-  res.render("index", { PageTitle: "Tarık Soğukpınar" });
+  try {
+    res.render("index", { PageTitle: "Tarık Soğukpınar" });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export default { IndexPage };

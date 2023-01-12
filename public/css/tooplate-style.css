@@ -300,6 +300,9 @@ strong {
 .dark-tech {
   color: white;
 }
+.dark-logo{
+  color: white;
+}
 .dark-mode .navbar-light .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.8);
 }

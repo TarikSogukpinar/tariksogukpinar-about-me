@@ -6,6 +6,7 @@
     $(".color-mode-icon").toggleClass("active");
     $("body").toggleClass("dark-mode");
     $("#tech").toggleClass("dark-tech");
+    $("#dev-icon").toggleClass("dark-logo");
   });
 
   // HEADER
