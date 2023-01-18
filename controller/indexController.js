@@ -3,7 +3,10 @@ const IndexPage = (req, res) => {
     res.render("index", { PageTitle: "Tarık Soğukpınar" });
   } catch (error) {
     console.log(error);
+    res.status(500).json({ message: error });
   }
 };
 
-export default { IndexPage };
+module.exports = {
+  IndexPage,
+}
